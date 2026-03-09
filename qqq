@@ -1,0 +1,60 @@
+import { useState } from "react";
+              <label className="font-semibold">8. Do you think the show showed enough of the forging of the Rings?</label>
+              <select name="rings" onChange={handleChange} className="w-full border rounded p-2">
+                <option value="">Select</option>
+                <option>Yes</option>
+                <option>No</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="font-semibold">9. What was your favorite moment of Celebrimbor?</label>
+              <textarea name="favorite" onChange={handleChange} className="w-full border rounded p-2" />
+            </div>
+
+            <div>
+              <label className="font-semibold">10. What didn't you like about his storyline?</label>
+              <textarea name="dislike" onChange={handleChange} className="w-full border rounded p-2" />
+            </div>
+
+            <div>
+              <label className="font-semibold">11. If the writers could add one new storyline about Celebrimbor, what would it be?</label>
+              <textarea name="storyline" onChange={handleChange} className="w-full border rounded p-2" />
+            </div>
+
+            <div>
+              <label className="font-semibold">12. How important is Celebrimbor in Tolkien lore?</label>
+              <select name="importance" onChange={handleChange} className="w-full border rounded p-2">
+                <option value="">Select</option>
+                <option>Extremely important</option>
+                <option>Important</option>
+                <option>Somewhat important</option>
+                <option>Not important</option>
+                <option>I don't know</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="font-semibold">13. Would more Celebrimbor make you more excited for future seasons?</label>
+              <select name="excitement" onChange={handleChange} className="w-full border rounded p-2">
+                <option value="">Select</option>
+                <option>Yes</option>
+                <option>Maybe</option>
+                <option>No</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="font-semibold">14. Any other thoughts about Celebrimbor?</label>
+              <textarea name="thoughts" onChange={handleChange} className="w-full border rounded p-2" />
+            </div>
+
+            <Button type="submit" className="w-full">Submit & Preview Answers</Button>
+
+          </form>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}
